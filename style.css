@@ -91,6 +91,7 @@ border-radius: 50px;
 background: rgb(254,123,0);
 background: linear-gradient(90deg, rgba(254,123,0,1) 0%, rgba(255,87,51,1) 100%);
 border: none;
+cursor: pointer;
 }
 .fa-magnifying-glass{
     background-color: transparent;
@@ -104,6 +105,44 @@ border: none;
     font-size: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     color: lightskyblue;
+}
+
+/* Search bar */
+.search-container{
+    opacity: 0;
+    pointer-events: none;
+transition: all .5s ease-in-out;
+}
+.search-bar{
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 50px;
+    background: rgb(254,123,0);
+background: linear-gradient(90deg, rgba(254,123,0,1) 0%, rgba(255,87,51,1) 100%);
+border: none;
+outline: none;
+}
+.search-bar::placeholder{
+color: lightyellow;
+opacity: 80%;
+}
+.search-title{
+    position: absolute;
+    right: -5%;
+    top: 20%;
+}
+.search-close{
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.search-active{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Banner */
